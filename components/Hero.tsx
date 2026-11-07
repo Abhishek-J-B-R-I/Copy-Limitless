@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Cpu, ShieldCheck, Zap, Sparkles, Command, ArrowRight, Laptop, LifeBuoy } from "lucide-react";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig, getAssetPath } from "@/lib/siteConfig";
 
 export default function Hero() {
   return (
@@ -21,7 +21,7 @@ export default function Hero() {
             <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-blue-600/30 via-cyan-500/30 to-purple-600/30 blur-xl opacity-75 group-hover:opacity-100 transition duration-500" />
             <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-3xl overflow-hidden shadow-2xl border border-white/10 bg-[#0e1117] flex items-center justify-center p-2">
               <Image
-                src="/app-icon.png"
+                src={getAssetPath("/app-icon.png")}
                 alt="Copy Limitless App Icon"
                 width={112}
                 height={112}

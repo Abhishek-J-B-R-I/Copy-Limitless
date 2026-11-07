@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Copy, Shield, ArrowUp, Sparkles, Terminal, LifeBuoy, FileText, Laptop, ExternalLink, Mail } from "lucide-react";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig, getAssetPath } from "@/lib/siteConfig";
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -66,7 +66,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-3 group inline-flex">
               <div className="relative w-8 h-8 rounded-lg overflow-hidden shrink-0 shadow-sm">
                 <Image
-                  src="/app-icon.png"
+                  src={getAssetPath("/app-icon.png")}
                   alt="Copy Limitless Icon"
                   width={32}
                   height={32}

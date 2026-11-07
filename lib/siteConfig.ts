@@ -6,6 +6,12 @@
  * privacy policy, and global footer.
  */
 
+export const getAssetPath = (path: string): string => {
+  const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  return `${base}${cleanPath}`;
+};
+
 export const siteConfig = {
   name: "Copy Limitless",
   tagline: "The Native, Encrypted macOS Clipboard Manager Built for Power Users",

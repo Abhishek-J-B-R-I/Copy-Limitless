@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig, getAssetPath } from "@/lib/siteConfig";
 import {
   LifeBuoy,
   Mail,
@@ -205,7 +205,7 @@ export default function SupportContent() {
             <div className="absolute -inset-1 rounded-2xl bg-cyan-500/20 blur-lg opacity-75 group-hover:opacity-100 transition duration-300" />
             <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden shadow-xl border border-white/10 bg-[#0e1117] flex items-center justify-center p-1.5">
               <Image
-                src="/app-icon.png"
+                src={getAssetPath("/app-icon.png")}
                 alt="Copy Limitless App Icon"
                 width={80}
                 height={80}

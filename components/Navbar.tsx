@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Copy, Shield, Menu, X, Cpu, LifeBuoy, Laptop, BookOpen, Sparkles } from "lucide-react";
-import { siteConfig } from "@/lib/siteConfig";
+import { siteConfig, getAssetPath } from "@/lib/siteConfig";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -33,7 +33,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3 shrink-0 group">
           <div className="relative w-10 h-10 shrink-0 rounded-xl overflow-hidden shadow-glow">
             <Image
-              src="/app-icon.png"
+              src={getAssetPath("/app-icon.png")}
               alt="Copy Limitless Icon"
               width={40}
               height={40}
