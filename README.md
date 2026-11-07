@@ -1,27 +1,27 @@
-# Copy Limitless — Official Product Website & System Architecture
+# Copy Limitless — Official Website
 
-A modern, high-performance static website for **Copy Limitless** (the native, hardware-encrypted macOS clipboard manager).
+The official product and support website for **Copy Limitless** (the native, privacy-first macOS clipboard manager and productivity suite).
 
 Built with **Next.js 14 (App Router)**, **TypeScript**, and **Tailwind CSS**, pre-rendered to 100% static HTML with comprehensive SEO, OpenGraph metadata, and Schema.org JSON-LD structured data.
 
 ---
 
-## 🌟 Sections & Highlights
+## 🌟 Pages & Key Sections
 
-1. **Hero**: High-impact Apple-style dark design, live metrics (<40ms search, 0% cloud, 22MB -> 2MB Retina PNG, <30MB RAM).
+1. **Hero**: Modern Apple-style dark design featuring the official 3D app icon, release info, and live metrics (<40ms search, 0% cloud, <30MB RAM).
 2. **Interactive UI Simulator**: Live functional mockup of the `⌘⇧V` launcher window with real-time search, category filtering, multi-select batch export/delete, and encrypted preview pane.
-3. **Deep System Design & Architecture**: Interactive multi-tab engineering breakdown:
-   - **Full System Topology**: 5-tier isolated architectural layers from macOS Kernel to Presentation.
-   - **⌘⇧3 Screenshot Pipeline**: DispatchSource kernel file descriptor watcher, Retina PNG compression, zero-delay pasteboard injection.
-   - **Zero-Query Ingestion**: 50ms polling with 25ms adaptive burst windows and in-memory atomic exclusion sets.
-   - **Hardware AES-256-GCM & Keychain**: 256-bit symmetric key lifecycle, 12-byte nonce, 16-byte GCM authentication tag.
-   - **SQLite3 FTS5 Search Engine**: Porter tokenization, 40ms debouncing, WAL concurrent read/write isolation.
-   - **Synchronized Auto-Paste**: AXIsProcessTrusted pre-flight, focus tracking, 20ms settle window, synthetic `⌘V` via `CGEventPost`.
-4. **How It Works on MacBooks**: Apple Silicon M-series tuning, Carbon Event HotKey (⌘⇧V), zero-dock LSUIElement, all-day battery optimization.
-5. **Feature Suite**: Deep dive into all 8 core features.
-6. **Comparison Matrix**: Side-by-side comparison against Maccy, Paste ($14.99/yr), Raycast, and Alfred.
-7. **Productivity ROI Calculator**: Interactive sliders calculating annual hours saved, context switches prevented, and keystrokes eliminated.
-8. **Interactive FAQ**: Searchable accordion answering privacy, technical, and macOS integration questions.
+3. **How Copy Limitless Works in 3 Easy Steps**: Clean, user-focused workflow guide:
+   - **Step 1: Copy Anything (`⌘ + C`)**: Auto-capture text, links, code, and ⌘⇧3/⌘⇧4 screenshots with password manager filtering.
+   - **Step 2: Open & Find (`⌘ + ⇧ + V`)**: Global floating launcher with sub-40ms instant search and category filters.
+   - **Step 3: Paste Instantly (`Return`)**: Auto-paste at active cursor, plain text paste (Shift+Return), and dynamic snippet expansion.
+4. **Mac Lineup Compatibility**: Full compatibility across MacBook Air, MacBook Pro, iMac, Mac mini, Mac Studio, and Mac Pro.
+5. **Engineered Specifically for Mac Users**: All-day battery optimization, clean menu bar accessory, and keyboard-first workflow.
+6. **Feature Suite**: Comprehensive feature breakdown (AES-256 encryption, Retina screenshot capture, snippet variables, URL tracking stripper).
+7. **Comparison Matrix**: Side-by-side comparison against Maccy, Paste, and Raycast.
+8. **Productivity ROI Calculator**: Interactive sliders calculating annual hours saved and focus time recovered.
+9. **Interactive FAQ**: Searchable accordion answering privacy, technical, and macOS integration questions.
+10. **Support & Troubleshooting Page (`/support`)**: Dedicated Apple App Store support center with contact card, direct mailto form, complete keyboard shortcuts guide, and troubleshooting accordions.
+11. **Privacy Policy Page (`/privacy`)**: Apple App Store compliant privacy statement detailing zero data collection, local-only encrypted storage, and macOS system permissions.
 
 ---
 
